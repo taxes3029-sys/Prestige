@@ -27,6 +27,22 @@
     </div>
   </div>
 
+  <section id="promo" class="promo-section">
+    <div class="container">
+      <div class="promo-banner">
+        <div>
+          <div class="eyebrow">Special Offer</div>
+          <h2 class="promo-title">Student &amp; Under 18 Tax Returns</h2>
+          <p class="muted promo-copy">Simple individual tax returns for students and under 18s at a fixed low price.</p>
+        </div>
+        <div class="promo-price-wrap">
+          <div class="promo-price">$89</div>
+          <div class="promo-note">+ GST | Conditions apply</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <header class="hero">
     <div class="container hero-grid">
       <div class="hero-card">
@@ -150,8 +166,7 @@
 
       <div class="tab-shell">
         <div class="tab-nav" id="pricingTabNav" role="tablist" aria-label="Pricing categories">
-          <button class="tab-btn active" data-tab="tab-students" type="button" role="tab" aria-selected="true">Students &amp; Under 18</button>
-          <button class="tab-btn" data-tab="tab-individuals" type="button" role="tab" aria-selected="false">Individuals &amp; Sole Traders</button>
+          <button class="tab-btn active" data-tab="tab-individuals" type="button" role="tab" aria-selected="true">Individuals &amp; Sole Traders</button>
           <button class="tab-btn" data-tab="tab-rideshare" type="button" role="tab" aria-selected="false">Ride Share</button>
           <button class="tab-btn" data-tab="tab-companies" type="button" role="tab" aria-selected="false">Companies &amp; Trusts</button>
           <button class="tab-btn" data-tab="tab-smsf" type="button" role="tab" aria-selected="false">Self-managed super funds (SMSF)</button>
@@ -159,22 +174,7 @@
           <button class="tab-btn" data-tab="tab-others" type="button" role="tab" aria-selected="false">Other Services</button>
         </div>
 
-        <div id="tab-students" class="tab-panel active" role="tabpanel" aria-hidden="false">
-          <div class="pricing">
-            <div class="price-card feature-card">
-              <span class="pill">Special Offer</span>
-              <div class="price">$89</div>
-              <ul>
-                <li>Student and under 18 tax returns</li>
-                <li>Simple individual tax returns</li>
-                <li>GST applies</li>
-                <li>Conditions apply</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div id="tab-individuals" class="tab-panel" role="tabpanel" aria-hidden="true">
+        <div id="tab-individuals" class="tab-panel active" role="tabpanel" aria-hidden="false">
           <div class="pricing">
             <div class="price-card">
               <span class="pill">Individual Tax Return</span>
@@ -480,10 +480,6 @@
         <div class="eyebrow">Tax Calculator</div>
         <h2>Estimate your income tax</h2>
         <div class="field">
-          <label>Financial year</label>
-          <div class="notice">FY 2025 (2024-25)</div>
-        </div>
-        <div class="field">
           <label for="income">Annual taxable income (AUD)</label>
           <input id="income" type="number" min="0" step="1" placeholder="Enter amount" />
         </div>
@@ -512,10 +508,6 @@
           <div class="result-item"><span>Estimated net income</span><strong id="netAmount">$0.00</strong></div>
         </div>
         <div class="notice" id="rateSummary">FY 2025 rates loaded.</div>
-        <div class="notice">
-          <strong>Privacy &amp; Sensitive Information Notice</strong><br />
-          We do not request or collect sensitive personal information such as TFNs, dates of birth, or identity documents through this website. Clients should use secure channels for confidential information.
-        </div>
         <div id="calculator-tests" class="test-status" aria-live="polite">Running calculator checks...</div>
       </div>
     </div>
