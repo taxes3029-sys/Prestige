@@ -1,0 +1,36 @@
+(function () {
+  function setPricingTab(tabId) {
+    var buttons = document.querySelectorAll('.tab-btn');
+    var panels = document.querySelectorAll('.tab-panel');
+
+    buttons.forEach(function (btn) {
+      var active = btn.dataset.tab === tabId;
+      btn.classList.toggle('active', active);
+      btn.setAttribute('aria-selected', active ? 'true' : 'false');
+    });
+
+    panels.forEach(function (panel) {
+      var active = panel.id === tabId;
+      panel.classList.toggle('active', active);
+      panel.setAttribute('aria-hidden', active ? 'false' : 'true');
+    });
+  }
+
+  function initTabs() {
+    var buttons = document.querySelectorAll('.tab-btn');
+    if (!buttons.length) return;
+
+    buttons.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        setPricingTab(btn.dataset.tab);
+      });
+    });
+
+    setPricingTab('tab-individuals');
+  }
+
+  window.PrestigeTabs = {
+    initTabs: initTabs,
+    setPricingTab: setPricingTab
+  };
+})();
