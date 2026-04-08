@@ -1,6 +1,6 @@
 (function () {
   var TAX_TABLES = {
-    '2025': {
+    "2025": {
       resident: [
         { upTo: 18200, base: 0, rate: 0, threshold: 0 },
         { upTo: 45000, base: 0, rate: 0.16, threshold: 18200 },
@@ -13,14 +13,14 @@
         { upTo: 190000, base: 40500, rate: 0.37, threshold: 135000 },
         { upTo: Infinity, base: 60850, rate: 0.45, threshold: 190000 }
       ],
-      summary: 'FY 2025 (2024-25): resident rates include 16%, 30%, 37% and 45% brackets. Non-resident rates start at 30%.'
+      summary: "FY 2025 (2024-25): resident rates include 16%, 30%, 37% and 45% brackets. Non-resident rates start at 30%."
     }
   };
 
   function formatAUD(value) {
-    return new Intl.NumberFormat('en-AU', {
-      style: 'currency',
-      currency: 'AUD'
+    return new Intl.NumberFormat("en-AU", {
+      style: "currency",
+      currency: "AUD"
     }).format(Number(value) || 0);
   }
 
@@ -35,12 +35,12 @@
   }
 
   function calculateTax() {
-    var incomeInput = document.getElementById('income');
-    var residentSelect = document.getElementById('resident');
-    var taxAmount = document.getElementById('taxAmount');
-    var totalAmount = document.getElementById('totalAmount');
-    var netAmount = document.getElementById('netAmount');
-    var rateSummary = document.getElementById('rateSummary');
+    var incomeInput = document.getElementById("income");
+    var residentSelect = document.getElementById("resident");
+    var taxAmount = document.getElementById("taxAmount");
+    var totalAmount = document.getElementById("totalAmount");
+    var netAmount = document.getElementById("netAmount");
+    var rateSummary = document.getElementById("rateSummary");
 
     if (!incomeInput || !residentSelect || !taxAmount || !totalAmount || !netAmount || !rateSummary) {
       return;
@@ -48,8 +48,9 @@
 
     var income = Math.max(0, Number(incomeInput.value || 0));
     var status = residentSelect.value;
-    var table = TAX_TABLES['2025'];
-    var brackets = status === 'resident' ? table.resident : table.nonresident;
+    var table = TAX_TABLES["2025"];
+    var brackets = status === "resident" ? table.resident : table.nonresident;
+
     var tax = calculateBracketTax(income, brackets);
     var total = tax;
     var net = income - total;
@@ -66,15 +67,33 @@
 
   function runCalculatorTests() {
     var tests = [
-      { name: 'FY2025 resident tax at 45000 should be 4288', pass: approximatelyEqual(calculateBracketTax(45000, TAX_TABLES['2025'].resident), 4288, 0.01) },
-      { name: 'FY2025 resident tax at 50000 should be 5788', pass: approximatelyEqual(calculateBracketTax(50000, TAX_TABLES['2025'].resident), 5788, 0.01) },
-      { name: 'FY2025 non-resident tax at 150000 should be 46050', pass: approximatelyEqual(calculateBracketTax(150000, TAX_TABLES['2025'].nonresident), 46050, 0.01) },
-      { name: 'Tax should never be negative at zero income', pass: calculateBracketTax(0, TAX_TABLES['2025'].resident) === 0 },
-      { name: 'Non-resident tax at zero income should be zero', pass: calculateBracketTax(0, TAX_TABLES['2025'].nonresident) === 0 },
-      { name: 'Resident tax at 190000 should be 51638', pass: approximatelyEqual(calculateBracketTax(190000, TAX_TABLES['2025'].resident), 51638, 0.01) }
+      {
+        name: "FY2025 resident tax at 45000 should be 4288",
+        pass: approximatelyEqual(calculateBracketTax(45000, TAX_TABLES["2025"].resident), 4288, 0.01)
+      },
+      {
+        name: "FY2025 resident tax at 50000 should be 5788",
+        pass: approximatelyEqual(calculateBracketTax(50000, TAX_TABLES["2025"].resident), 5788, 0.01)
+      },
+      {
+        name: "FY2025 non-resident tax at 150000 should be 46050",
+        pass: approximatelyEqual(calculateBracketTax(150000, TAX_TABLES["2025"].nonresident), 46050, 0.01)
+      },
+      {
+        name: "Tax should never be negative at zero income",
+        pass: calculateBracketTax(0, TAX_TABLES["2025"].resident) === 0
+      },
+      {
+        name: "Non-resident tax at zero income should be zero",
+        pass: calculateBracketTax(0, TAX_TABLES["2025"].nonresident) === 0
+      },
+      {
+        name: "Resident tax at 190000 should be 51638",
+        pass: approximatelyEqual(calculateBracketTax(190000, TAX_TABLES["2025"].resident), 51638, 0.01)
+      }
     ];
 
-    var testBox = document.getElementById('calculator-tests');
+    var testBox = document.getElementById("calculator-tests");
     if (!testBox) return;
 
     var failed = tests.filter(function (test) {
@@ -82,30 +101,41 @@
     });
 
     if (failed.length === 0) {
-      testBox.className = 'test-status pass';
-      testBox.textContent = 'Calculator checks passed.';
+      testBox.className = "test-status pass";
+      testBox.textContent = "Calculator checks passed.";
     } else {
-      testBox.className = 'test-status fail';
-      testBox.textContent = 'Calculator checks failed:\n- ' + failed.map(function (test) {
-        return test.name;
-      }).join('\n- ');
+      testBox.className = "test-status fail";
+      testBox.textContent =
+        "Calculator checks failed:\n- " +
+        failed.map(function (test) {
+          return test.name;
+        }).join("\n- ");
     }
   }
 
   function initCalculator() {
-    var residentSelect = document.getElementById('resident');
-    var incomeInput = document.getElementById('income');
-    var calculateBtn = document.getElementById('calculateBtn');
+    var residentSelect = document.getElementById("resident");
+    var incomeInput = document.getElementById("income");
+    var calculateBtn = document.getElementById("calculateBtn");
 
-    if (residentSelect) residentSelect.addEventListener('change', calculateTax);
-    if (incomeInput) incomeInput.addEventListener('input', calculateTax);
-    if (calculateBtn) calculateBtn.addEventListener('click', calculateTax);
+    if (residentSelect) {
+      residentSelect.addEventListener("change", calculateTax);
+    }
+
+    if (incomeInput) {
+      incomeInput.addEventListener("input", calculateTax);
+    }
+
+    if (calculateBtn) {
+      calculateBtn.addEventListener("click", calculateTax);
+    }
 
     calculateTax();
     runCalculatorTests();
   }
 
   window.PrestigeCalculator = {
-    initCalculator: initCalculator
+    initCalculator: initCalculator,
+    calculateTax: calculateTax
   };
 })();
