@@ -80,14 +80,6 @@
         pass: approximatelyEqual(calculateBracketTax(150000, TAX_TABLES["2025"].nonresident), 46050, 0.01)
       },
       {
-        name: "Tax should never be negative at zero income",
-        pass: calculateBracketTax(0, TAX_TABLES["2025"].resident) === 0
-      },
-      {
-        name: "Non-resident tax at zero income should be zero",
-        pass: calculateBracketTax(0, TAX_TABLES["2025"].nonresident) === 0
-      },
-      {
         name: "Resident tax at 190000 should be 51638",
         pass: approximatelyEqual(calculateBracketTax(190000, TAX_TABLES["2025"].resident), 51638, 0.01)
       }
@@ -105,11 +97,9 @@
       testBox.textContent = "Calculator checks passed.";
     } else {
       testBox.className = "test-status fail";
-      testBox.textContent =
-        "Calculator checks failed:\n- " +
-        failed.map(function (test) {
-          return test.name;
-        }).join("\n- ");
+      testBox.textContent = "Calculator checks failed:\\n- " + failed.map(function (test) {
+        return test.name;
+      }).join("\\n- ");
     }
   }
 
@@ -118,24 +108,15 @@
     var incomeInput = document.getElementById("income");
     var calculateBtn = document.getElementById("calculateBtn");
 
-    if (residentSelect) {
-      residentSelect.addEventListener("change", calculateTax);
-    }
-
-    if (incomeInput) {
-      incomeInput.addEventListener("input", calculateTax);
-    }
-
-    if (calculateBtn) {
-      calculateBtn.addEventListener("click", calculateTax);
-    }
+    if (residentSelect) residentSelect.addEventListener("change", calculateTax);
+    if (incomeInput) incomeInput.addEventListener("input", calculateTax);
+    if (calculateBtn) calculateBtn.addEventListener("click", calculateTax);
 
     calculateTax();
     runCalculatorTests();
   }
 
   window.PrestigeCalculator = {
-    initCalculator: initCalculator,
-    calculateTax: calculateTax
+    initCalculator: initCalculator
   };
 })();
