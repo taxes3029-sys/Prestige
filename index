@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prestige Accounting Solutions Pty Ltd</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <div class="topbar">
+    <div class="container nav">
+      <div class="brand">
+        <div class="brand-mark">PA</div>
+        <div>
+          Prestige Accounting Solutions Pty Ltd<br />
+          <span class="muted small-text">Tax, advisory and compliance services</span>
+        </div>
+      </div>
+      <div class="nav-links">
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#calculator">Tax Calculator</a>
+        <a href="#booking">Booking</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </div>
+
+  <header class="hero">
+    <div class="container hero-grid">
+      <div class="hero-card">
+        <div class="eyebrow">Trusted Australian tax and accounting support</div>
+        <h1>Maximise your tax outcomes with expert accounting advice.</h1>
+        <p class="lead">Prestige Accounting Solutions Pty Ltd helps individuals, investors, and business owners with tax returns, BAS, GST, structuring, payroll, SMSF support, and ongoing compliance.</p>
+        <div class="hero-actions">
+          <a class="cta" href="#booking">Book a Consultation</a>
+          <a class="btn-secondary" href="#pricing">View Pricing</a>
+        </div>
+        <div class="stats">
+          <div class="stat"><strong>10+ Years</strong><span class="muted">Australian accounting experience</span></div>
+          <div class="stat"><strong>TPB</strong><span class="muted">Registered tax agent services</span></div>
+          <div class="stat"><strong>ASIC</strong><span class="muted">Registered agent support</span></div>
+        </div>
+      </div>
+      <div class="hero-card">
+        <h3>Why clients choose Prestige</h3>
+        <div class="checklist">
+          <div class="check">Individual, business, company, trust, and SMSF tax support</div>
+          <div class="check">Practical advice focused on compliance and tax efficiency</div>
+          <div class="check">Clear pricing, responsive communication, and secure document handling</div>
+          <div class="check">Support for BAS, GST, payroll, structuring, and ongoing compliance matters</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="services">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">Services</div>
+          <h2>Services built for individuals and growing businesses</h2>
+        </div>
+        <p class="muted">Professional tax and compliance support tailored to your needs.</p>
+      </div>
+      <div class="services">
+        <div class="service-card">
+          <h3>Tax Returns</h3>
+          <ul>
+            <li>Individual tax returns</li>
+            <li>Rental property and CGT matters</li>
+            <li>Company and trust tax returns</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <h3>Business Compliance</h3>
+          <ul>
+            <li>BAS and GST lodgements</li>
+            <li>Bookkeeping support in Xero, QuickBooks, and MYOB</li>
+            <li>Payroll processing and setup</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <h3>Advisory</h3>
+          <ul>
+            <li>Business structuring</li>
+            <li>Tax planning</li>
+            <li>SMSF tax compliance support</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container bio-grid">
+      <div class="card">
+        <div class="badge-row">
+          <span class="pill">10+ Years Experience</span>
+        </div>
+        <div class="eyebrow">Founder</div>
+        <h2>Ayaz Ahmed</h2>
+        <p class="muted">Director - Prestige Accounting Solutions Pty Ltd</p>
+        <div class="badge-row">
+          <span class="pill">IPA Member</span>
+          <span class="pill">TPB Registered</span>
+          <span class="pill">ASIC Agent</span>
+        </div>
+        <p>Ayaz Ahmed is an experienced tax professional with over 10 years of Australian accounting and taxation experience, including 5 years with H&amp;R Block and boutique accounting firms in Sydney. He holds a Master of Accounting and provides practical, compliant, and tax-efficient support for individuals, investors, and small businesses.</p>
+        <p>His experience includes tax returns, BAS and GST, company and trust matters, business structuring, and SMSF compliance support.</p>
+      </div>
+      <div class="card">
+        <div class="eyebrow">About Us</div>
+        <h2>Prestige Accounting Solutions Pty Ltd</h2>
+        <p>Prestige Accounting Solutions Pty Ltd is a modern accounting and tax advisory firm based in Victoria, offering reliable, transparent, and results-driven services to clients across Australia.</p>
+        <p>Our goal is to maximise tax outcomes while maintaining strong compliance standards and clear client communication.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="promo">
+    <div class="container">
+      <div class="card promo-card">
+        <div>
+          <div class="eyebrow">Special Offer</div>
+          <h2 class="promo-title">Student &amp; Under 18 Tax Returns</h2>
+          <p class="muted promo-copy">Simple individual tax returns for students and under 18s at a fixed low price.</p>
+        </div>
+        <div class="promo-price-wrap">
+          <div class="price promo-price">$89</div>
+          <div class="muted promo-note">+ GST | Conditions apply</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">Pricing</div>
+          <h2>Choose the plan that fits your needs</h2>
+          <p class="muted">All prices are GST exclusive. Minimum fee applies.</p>
+        </div>
+      </div>
+
+      <div class="tab-shell">
+        <div class="tab-nav" id="pricingTabNav" role="tablist" aria-label="Pricing categories">
+          <button class="tab-btn active" data-tab="tab-individuals" type="button" role="tab" aria-selected="true">Individuals &amp; Sole Traders</button>
+          <button class="tab-btn" data-tab="tab-rideshare" type="button" role="tab" aria-selected="false">Ride Share</button>
+          <button class="tab-btn" data-tab="tab-companies" type="button" role="tab" aria-selected="false">Companies &amp; Trusts</button>
+          <button class="tab-btn" data-tab="tab-smsf" type="button" role="tab" aria-selected="false">Self-managed super funds (SMSF)</button>
+          <button class="tab-btn" data-tab="tab-bookkeeping" type="button" role="tab" aria-selected="false">Bookkeeping &amp; Payroll</button>
+          <button class="tab-btn" data-tab="tab-others" type="button" role="tab" aria-selected="false">Other Services</button>
+        </div>
+
+        <div id="tab-individuals" class="tab-panel active" role="tabpanel">
+          <div class="pricing">
+            <div class="price-card">
+              <span class="pill">Individual Tax Return</span>
+              <div class="price">From $120</div>
+              <ul>
+                <li>Salary and wages</li>
+                <li>Basic deductions</li>
+                <li>GST exclusive</li>
+              </ul>
+            </div>
+            <div class="price-card">
+              <span class="pill">Sole Trader Tax Return</span>
+              <div class="price">From $180</div>
+              <ul>
+                <li>$180 - Simple (low transactions)</li>
+                <li>$250 - Moderate business activity - Most common</li>
+                <li>$350+ - Complex / high transactions</li>
+                <li>Business income and expenses</li>
+                <li>Basic bookkeeping review</li>
+                <li>GST exclusive</li>
+              </ul>
+            </div>
+            <div class="price-card">
+              <span class="pill">Rental Property / CGT</span>
+              <div class="price">From $180</div>
+              <ul>
+                <li>$180 - Single property (simple)</li>
+                <li>$250 - Multiple properties</li>
+                <li>$300+ - Complex CGT / multiple disposals</li>
+                <li>Rental property schedules</li>
+                <li>Capital gains tax</li>
+                <li>GST exclusive</li>
+              </ul>
+            </div>
+          </div>
+          <div class="notice">From pricing depends on completeness of records, number of properties, and capital gains complexity.</div>
+        </div>
+
+        <div id="tab-rideshare" class="tab-panel" role="tabpanel" aria-hidden="true">
+          <div class="pricing">
+            <div class="price-card">
+              <span class="pill">Ride Share Package</span>
+              <div class="price">$390 <span class="muted inline-note">(excl. GST)</span></div>
+              <ul>
+                <li>Includes 4 GST lodgements</li>
+                <li>Business tax return included</li>
+                <li>Designed for Uber, Ola, and DiDi drivers</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div id="tab-companies" class="tab-panel" role="tabpanel" aria-hidden="true">
+          <div class="pricing">
+            <div class="price-card">
+              <span class="pill">Company Tax Return</span>
+              <div class="price">From $500</div>
+              <ul>
+                <li>$500 - Simple company</li>
+                <li>$700 - Moderate transactions - Most common</li>
+                <li>$900+ - Complex / multiple activities</li>
+                <li>Company tax return</li>
+                <li>Financial statements</li>
+                <li>GST exclusive</li>
+              </ul>
+            </div>
+            <div class="price-card">
+              <span class="pill">Trust Tax Return</span>
+              <div class="price">From $500</div>
+              <ul>
+                <li>$500 - Simple trust</li>
+                <li>$750 - Investment / multiple distributions - Most common</li>
+                <li>$1,000+ - Complex structures</li>
+                <li>Trust tax return</li>
+                <li>Distribution statements</li>
+                <li>GST exclusive</li>
+              </ul>
+            </div>
+            <div class="price-card">
+              <span class="pill">Company Bookkeeping</span>
+              <div class="price">$400 - $900 <span class="muted inline-note">/ month</span></div>
+              <ul>
+                <li>Up to $1M turnover</li>
+                <li>One bank account</li>
+                <li>Compliance and tax planning in Xero, QuickBooks, and MYOB</li>
+              </ul>
+            </div>
+            <div class="price-card">
+              <span class="pill">Trust Bookkeeping</span>
+              <div class="price">$400 - $1,200 <span class="muted inline-note">/ month</span></div>
+              <ul>
+                <li>Investment or business trust</li>
+                <li>Distributions and compliance</li>
+                <li>Quoted by complexity</li>
+              </ul>
+            </div>
+          </div>
+          <div class="notice">Pricing varies based on turnover, transaction volume, payroll, software integration, and advisory requirements.</div>
+        </div>
+
+        <div id="tab-smsf" class="tab-panel" role="tabpanel" aria-hidden="true">
+          <div class="pricing">
+            <div class="price-card">
+              <span class="pill">SMSF Annual Return</span>
+              <div class="price">From $1,500 <span class="muted inline-note">(excl. GST)</span></div>
+              <ul>
+                <li>$1,500 - One property / simple fund</li>
+                <li>$1,800 - Multiple investments - Most common</li>
+                <li>$2,200+ - Complex / crypto / overseas</li>
+                <li>Preparation of annual financial statements</li>
+                <li>Preparation of annual member statements</li>
+                <li>Preparation of annual trustee resolutions and minutes</li>
+                <li>Preparation and lodgement of annual income tax return</li>
+                <li>External auditor report included</li>
+                <li>Turnaround time: 10 to 15 business days</li>
+              </ul>
+            </div>
+            <div class="price-card">
+              <span class="pill">SMSF Setup + Annual Bundle - Recommended</span>
+              <div class="price">$3,500</div>
+              <div class="bundle-save">Save $200 compared to separate pricing</div>
+              <ul>
+                <li>SMSF establishment</li>
+                <li>ABN and TFN registration</li>
+                <li>Rollover assistance</li>
+                <li>Full first year compliance</li>
+                <li>Annual return included</li>
+                <li>External audit included</li>
+              </ul>
+            </div>
+            <div class="price-card">
+              <span class="pill">Switch SMSF Accountant</span>
+              <div class="price">From $1,300</div>
+              <ul>
+                <li>Transfer from existing accountant</li>
+                <li>Review prior year work</li>
+                <li>Compliance health check</li>
+                <li>Ongoing annual support</li>
+              </ul>
+            </div>
+          </div>
+          <div class="notice">SMSF pricing assumes accurate and complete records are provided. Additional fees may apply for complex structures, prior year adjustments, or missing information.</div>
+        </div>
+
+        <div id="tab-bookkeeping" class="tab-panel" role="tabpanel" aria-hidden="true">
+          <p class="muted">Pricing applies to a single entity with one bank account. Based on annual turnover. All prices are exclusive of GST.</p>
+          <div class="pricing">
+            <div class="price-card">
+              <span class="pill">Tier 1</span>
+              <div class="price">$150 - $300 <span class="muted inline-note">/ month</span></div>
+              <ul>
+                <li>Up to $250,000 turnover</li>
+                <li>Basic bookkeeping and GST</li>
+                <li>Software: Xero, QuickBooks, MYOB</li>
+              </ul>
+            </div>
+            <div class="price-card">
+              <span class="pill">Tier 2 - Most common</span>
+              <div class="price">$300 - $600 <span class="muted inline-note">/ month</span></div>
+              <ul>
+                <li>$250,000 - $500,000 turnover</li>
+                <li>BAS, GST and reporting</li>
+                <li>Payroll support included</li>
+                <li>Additional employee: $15 per employee</li>
+                <li>STP finalisation: from $120</li>
+              </ul>
+            </div>
+            <div class="price-card">
+              <span class="pill">Tier 3</span>
+              <div class="price">$600 - $1,000+ <span class="muted inline-note">/ month</span></div>
+              <ul>
+                <li>$500,000 - $1M turnover</li>
+                <li>Full bookkeeping and payroll</li>
+                <li>Additional employee: $15 per employee</li>
+                <li>Monthly reporting and support</li>
+                <li>WorkCover reconciliation: from $150</li>
+                <li>Super reconciliation: from $120</li>
+              </ul>
+            </div>
+            <div class="price-card">
+              <span class="pill">Above $1M</span>
+              <div class="price">Custom Quote <span class="muted inline-note">(excl. GST)</span></div>
+              <ul>
+                <li>High transaction volume</li>
+                <li>Multiple accounts / payroll</li>
+                <li>Tailored service package</li>
+              </ul>
+            </div>
+          </div>
+          <div class="notice">Pricing may vary based on transaction volume, payroll complexity, and additional services. All prices are exclusive of GST.</div>
+        </div>
+
+        <div id="tab-others" class="tab-panel" role="tabpanel" aria-hidden="true">
+          <div class="pricing">
+            <div class="price-card">
+              <span class="pill">Company Setup</span>
+              <div class="price">$1,150</div>
+              <ul>
+                <li>Company registration with ASIC</li>
+                <li>ABN and TFN included</li>
+                <li>Corporate register setup</li>
+                <li>GST exclusive</li>
+              </ul>
+            </div>
+            <div class="price-card">
+              <span class="pill">Trust Setup</span>
+              <div class="price">$2,200</div>
+              <ul>
+                <li>Trust deed with corporate trustee</li>
+                <li>ABN and TFN registration</li>
+                <li>Setup documentation</li>
+                <li>GST exclusive</li>
+              </ul>
+            </div>
+            <div class="price-card">
+              <span class="pill">SMSF Setup</span>
+              <div class="price">$2,200</div>
+              <ul>
+                <li>SMSF establishment</li>
+                <li>ABN and TFN registration</li>
+                <li>Rollover assistance</li>
+                <li>Trust deed and documentation</li>
+                <li>GST exclusive</li>
+              </ul>
+            </div>
+            <div class="price-card">
+              <span class="pill">ABN Registration</span>
+              <div class="price">From $100</div>
+              <ul>
+                <li>ABN application</li>
+                <li>GST and PAYG setup if required</li>
+                <li>GST exclusive</li>
+              </ul>
+            </div>
+            <div class="price-card">
+              <span class="pill">Super Guarantee Charge (SGC)</span>
+              <div class="price">From $150</div>
+              <ul>
+                <li>SGC statement preparation (up to 4 employees)</li>
+                <li>Additional employee: $25 per employee</li>
+                <li>ATO lodgement</li>
+                <li>Compliance support</li>
+                <li>GST exclusive</li>
+              </ul>
+            </div>
+            <div class="price-card">
+              <span class="pill">BAS Lodgement</span>
+              <div class="price">From $150</div>
+              <ul>
+                <li>Quarterly BAS</li>
+                <li>GST review</li>
+                <li>GST exclusive</li>
+              </ul>
+            </div>
+            <div class="price-card">
+              <span class="pill">Payroll Setup</span>
+              <div class="price">From $180</div>
+              <ul>
+                <li>Initial payroll setup (2 employees included)</li>
+                <li>Additional employee: $15 per employee</li>
+                <li>STP configuration</li>
+                <li>Weekly payroll processing: from $80 / week</li>
+                <li>STP finalisation: from $120</li>
+                <li>GST exclusive</li>
+              </ul>
+            </div>
+            <div class="price-card">
+              <span class="pill">Tax Planning</span>
+              <div class="price">From $350</div>
+              <ul>
+                <li>Year-end review</li>
+                <li>Strategy recommendations</li>
+                <li>GST exclusive</li>
+              </ul>
+            </div>
+          </div>
+          <div class="notice">Pricing may vary based on complexity, transaction volume, and additional services required. Minimum fees apply to all engagements.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="calculator">
+    <div class="container calculator">
+      <div class="card">
+        <div class="eyebrow">Tax Calculator</div>
+        <h2>Estimate your income tax</h2>
+        <div class="field">
+          <label>Financial year</label>
+          <div class="notice">FY 2025 (2024-25)</div>
+        </div>
+        <div class="field">
+          <label for="income">Annual taxable income (AUD)</label>
+          <input id="income" type="number" min="0" step="1" placeholder="Enter amount" />
+        </div>
+        <div class="field">
+          <label for="resident">Tax resident status</label>
+          <select id="resident">
+            <option value="resident">Australian resident</option>
+            <option value="nonresident">Non-resident</option>
+          </select>
+        </div>
+        <div class="hero-actions">
+          <button class="cta" id="calculateBtn" type="button">Calculate</button>
+        </div>
+        <div class="notice">
+          <strong>Tax Calculator Disclaimer</strong><br />
+          This calculator uses ATO published individual income tax rates for FY 2025. Medicare levy, offsets, HELP/HECS, private health insurance, deductions, residency nuances, and other personal circumstances are not included. Results are estimates only and should not be relied upon as financial or taxation advice.
+        </div>
+      </div>
+      <div class="card">
+        <div class="eyebrow">Estimate</div>
+        <h2>Your results</h2>
+        <div class="result-box">
+          <div class="result-item"><span>Estimated income tax</span><strong id="taxAmount">$0.00</strong></div>
+          <div class="result-item"><span>Total estimated tax</span><strong id="totalAmount">$0.00</strong></div>
+          <div class="result-item"><span>Estimated net income</span><strong id="netAmount">$0.00</strong></div>
+        </div>
+        <div class="notice" id="rateSummary">FY 2025 rates loaded.</div>
+        <div class="notice">
+          <strong>Privacy &amp; Sensitive Information Notice</strong><br />
+          We do not request or collect sensitive personal information such as TFNs, dates of birth, or identity documents through this website. Clients should use secure channels for confidential information.
+        </div>
+        <div id="calculator-tests" class="test-status" aria-live="polite">Running calculator checks...</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="booking">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">Booking</div>
+          <h2>Book an appointment online</h2>
+        </div>
+        <p class="muted">Choose your service, preferred date, and contact details. A live booking link can be connected later.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="card">
+          <h3>Appointment Request</h3>
+          <div class="field">
+            <label for="bookingService">Service</label>
+            <select id="bookingService">
+              <option>Individual Tax Return - 30 minutes</option>
+              <option>Individual Tax Return with Rental / CGT - 60 minutes</option>
+              <option>Sole Trader Tax Return - 60 minutes</option>
+              <option>Ride Share Package - 60 minutes</option>
+              <option>Company / Trust Tax Return - 60 minutes</option>
+              <option>BAS / Bookkeeping Consultation - 60 minutes</option>
+              <option>SMSF Consultation - 60 minutes</option>
+              <option>Business Structure Advice - 60 minutes</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="bookingName">Full name</label>
+            <input id="bookingName" type="text" placeholder="Enter your full name" />
+          </div>
+          <div class="field">
+            <label for="bookingEmail">Email</label>
+            <input id="bookingEmail" type="email" placeholder="Enter your email" />
+          </div>
+          <div class="field">
+            <label for="bookingPhone">Phone</label>
+            <input id="bookingPhone" type="tel" placeholder="Enter your phone number" />
+          </div>
+          <div class="field">
+            <label for="bookingDate">Preferred date</label>
+            <input id="bookingDate" type="date" />
+          </div>
+          <div class="field">
+            <label for="bookingTime">Preferred time</label>
+            <input id="bookingTime" type="time" />
+          </div>
+          <div class="field">
+            <label for="bookingNotes">Notes</label>
+            <input id="bookingNotes" type="text" placeholder="Briefly describe your query" />
+          </div>
+          <div class="hero-actions">
+            <button class="cta" id="bookingSubmit" type="button">Request Booking</button>
+          </div>
+          <div class="notice" id="bookingMessage">Complete the form and connect your email or booking platform later for live submissions.</div>
+        </div>
+        <div class="card">
+          <h3>Common Appointment Types</h3>
+          <ul>
+            <li>Individual tax return (salary and wages) - 30 minutes</li>
+            <li>Individual tax return with rental property or CGT - 60 minutes</li>
+            <li>Sole trader, BAS, and business tax return - 60 minutes</li>
+            <li>Company and trust tax return consultation - 60 minutes</li>
+            <li>SMSF consultation - 60 minutes</li>
+            <li>Business structure and tax planning - 60 minutes</li>
+          </ul>
+          <div class="notice">
+            For a live system, this section can be connected to Calendly, Microsoft Bookings, Zoho Bookings, or a custom booking form.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container contact-grid">
+      <div class="card">
+        <div class="eyebrow">Contact</div>
+        <h2>Speak with Prestige Accounting Solutions</h2>
+        <p>Suite 10, Level 1, 272 Leakes Rd, Truganina VIC 3029</p>
+        <p class="muted">Add your phone, email, and booking link here before publishing live.</p>
+        <div class="hero-actions">
+          <a class="cta" href="mailto:hello@example.com">Email Us</a>
+          <a class="btn-secondary" href="#booking">Book Appointment</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="eyebrow">Publishing checklist</div>
+        <h3>Before going live</h3>
+        <ul>
+          <li>Replace placeholder email address</li>
+          <li>Add phone number and booking URL</li>
+          <li>Connect secure document portal</li>
+          <li>Review disclaimers and privacy text</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-card">
+      <strong>Prestige Accounting Solutions Pty Ltd</strong><br />
+      Suite 10, Level 1, 272 Leakes Rd, Truganina VIC 3029
+      <div class="footer-note">
+        Pricing is indicative and may vary based on complexity, transaction volume, and additional services.
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/tabs.js"></script>
+  <script src="assets/js/calculator.js"></script>
+  <script src="assets/js/booking.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
