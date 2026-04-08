@@ -1,40 +1,44 @@
 (function () {
   function submitBookingRequest() {
-    var service = document.getElementById('bookingService');
-    var name = document.getElementById('bookingName');
-    var email = document.getElementById('bookingEmail');
-    var phone = document.getElementById('bookingPhone');
-    var date = document.getElementById('bookingDate');
-    var time = document.getElementById('bookingTime');
-    var messageBox = document.getElementById('bookingMessage');
+    var service = document.getElementById("bookingService");
+    var name = document.getElementById("bookingName");
+    var email = document.getElementById("bookingEmail");
+    var phone = document.getElementById("bookingPhone");
+    var date = document.getElementById("bookingDate");
+    var time = document.getElementById("bookingTime");
+    var messageBox = document.getElementById("bookingMessage");
 
     if (!service || !name || !email || !phone || !date || !time || !messageBox) {
       return;
     }
 
     if (!name.value || !email.value || !phone.value || !date.value || !time.value) {
-      messageBox.textContent = 'Please complete your name, email, phone, preferred date, and preferred time.';
+      messageBox.textContent =
+        "Please complete your name, email, phone, preferred date, and preferred time.";
       return;
     }
 
     messageBox.textContent =
-      'Booking request ready: ' +
+      "Booking request ready: " +
       service.value +
-      ' for ' +
+      " for " +
       name.value +
-      ' on ' +
+      " on " +
       date.value +
-      ' at ' +
+      " at " +
       time.value +
-      '. Connect this form to email or a booking platform to receive live bookings.';
+      ". Connect this form to email or a booking platform to receive live bookings.";
   }
 
   function initBooking() {
-    var bookingSubmit = document.getElementById('bookingSubmit');
-    if (bookingSubmit) bookingSubmit.addEventListener('click', submitBookingRequest);
+    var bookingSubmit = document.getElementById("bookingSubmit");
+    if (bookingSubmit) {
+      bookingSubmit.addEventListener("click", submitBookingRequest);
+    }
   }
 
   window.PrestigeBooking = {
-    initBooking: initBooking
+    initBooking: initBooking,
+    submitBookingRequest: submitBookingRequest
   };
 })();
